@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-yellow-100 text-center py-5">
+    <h1 class="text-4xl mb-2">Calculadora Javascript</h1>
+    <br>
+    <div class="inline-block calculadora">
+        <input type="text" id="pantalla" readonly class="w-64 text-right mb-2 p-2">
+        <br>
+        <br>
+        <input type="button" value="1" onclick="add('1')" class="w-16 h-16 m-1 bg-blue-500 text-white">
+        <input type="button" value="2" onclick="add('2')" class="w-16 h-16 m-1 bg-blue-500 text-white">
+        <input type="button" value="3" onclick="add('3')" class="w-16 h-16 m-1 bg-blue-500 text-white">
+        <input type="button" value="+" onclick="add('+')" class="w-16 h-16 m-1 bg-green-500 text-white">
+        <br>
+        <input type="button" value="4" onclick="add('4')" class="w-16 h-16 m-1 bg-blue-500 text-white">
+        <input type="button" value="5" onclick="add('5')" class="w-16 h-16 m-1 bg-blue-500 text-white">
+        <input type="button" value="6" onclick="add('6')" class="w-16 h-16 m-1 bg-blue-500 text-white">
+        <input type="button" value="-" onclick="add('-')" class="w-16 h-16 m-1 bg-green-500 text-white">
+        <br>
+        <input type="button" value="7" onclick="add('7')" class="w-16 h-16 m-1 bg-blue-500 text-white">
+        <input type="button" value="8" onclick="add('8')" class="w-16 h-16 m-1 bg-blue-500 text-white">
+        <input type="button" value="9" onclick="add('9')" class="w-16 h-16 m-1 bg-blue-500 text-white">
+        <input type="button" value="*" onclick="add('*')" class="w-16 h-16 m-1 bg-green-500 text-white">
+        <br>
+        <input type="button" value="0" onclick="add('0')" class="w-16 h-16 m-1 bg-blue-500 text-white">
+        <input type="button" value="." onclick="add('.')" class="w-16 h-16 m-1 bg-blue-500 text-white">
+        <input type="button" value="/" onclick="add('/')" class="w-16 h-16 m-1 bg-green-500 text-white">
+        <input type="button" value="=" onclick="result()" class="w-16 h-16 m-1 bg-red-500 text-white">
+        <br>
+        <input type="button" value="C" onclick="cancel()" class="w-16 h-16 m-1 bg-yellow-500 text-white">
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
